@@ -1,0 +1,56 @@
+<h1>Exercice JS</h1>
+
+
+<div class="testClass">Val 1</div>
+<div class="testClass">Val 2</div>
+<div class="testClass">Val 3</div>
+<div class="testClass">Val 4</div>
+
+<a onclick="masquer()">Masquer div</a>
+<script type="text/javascript">
+
+
+
+function masquer()
+{
+    var i;
+    var elmts = document.getElementsByClassName('testClass');
+    for(i=0;i<elmts.length;i++)
+    {
+        elmts[i].style.display='none';
+    }
+
+}
+
+
+
+
+
+function recuperer()
+{
+
+    //uneligne
+    /*
+        paragraphe
+    */
+    var nom = document.getElementById('nom').value;
+    var age = document.getElementById('age').value;
+    
+  
+       
+        document.getElementById('divTest').classList.remove('error');
+
+        var elmts = document.getElementsByClassName('testClass');
+
+        for(var i=0;i<elmts.length;i++)
+        {
+            elmts[i].style.display='none';
+        }
+
+    
+
+
+
+}
+
+</script>

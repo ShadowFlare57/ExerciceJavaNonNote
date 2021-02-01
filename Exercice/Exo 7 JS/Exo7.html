@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+</head>
+<body>
+    <h1>Magasin Informatique</h1>
+    <p> Exercice 4 :
+        Un magasin d'informatique souhaite une application lui permettant de gérer son stock, il devra alors
+        saisir le nom du produit, la quantité et le prix sans qu'il ne puisse y avoir de doublons sur le nom du
+        produit.
+        Ecrire le code qui lui permettra de faire cette saisie, stocker les noms des produits dans un tableau
+        qui seront classés par ordre alphabétique croissant.
+        Il faudra également stocker dans une variable le montant total du stock et l'afficher.
+        Afficher un bouton qui permettra à l'utilisateur de voir tous les produits du stock.</p><br>
+    <label for="nom">Nom du produit</label> <span id="ErreurNom" style="color: red;display:block;">Champ Obligatoire</span><br>
+    <input type="text" name="produit" id="nom"><br>
+    <br>
+    <label for="nbr">Quantité</label><span id="ErreurNbr" style="color: red;display:block;">Champ Obligatoire</span><br>
+    <input type="text" name="quantité" id="nombre"><br>
+    <br>
+    <label for="prix">Prix</label><span id="ErreurPrix" style="color: red;display:block;">Champ Obligatoire</span><br>
+    <input type="text" name="prix" id="prix"><br>
+    <br>
+    <button type="button" onclick="result()">Envoyer</button><br>
+    <div id="total"></div>
+
+
+
+
+    <script src="./Exo7.js"></script>
+</body>
+</html>

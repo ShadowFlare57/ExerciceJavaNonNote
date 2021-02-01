@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 5 Tableau</title>
+</head>
+<body>
+    <div id="nb"></div>
+    
+    <script type="text/javascript">
+
+        var prenom = ['Cédric', 'Bernard', 'Joseph', 'Aurélie', 'Chloé', 'Anthony', 'Denis', 'Catherine'];
+        var i;
+        var text ='';
+        for(i=0; i<prenom.length; i++){
+            console.log(prenom[i]);
+            text += prenom[i]+ '<br>';
+    }
+    document.getElementById('nb').innerHTML = 'il y a '  +prenom.length+ ' eleves dans la classe, voici les prénoms : <br> ' + text; 
+    </script>
+</html>

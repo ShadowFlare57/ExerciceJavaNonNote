@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD3</title>
+</head>
+<body>
+    <h1 id="titre">TD 3</h1>
+
+<form>
+    <label>Prix</label>
+    <div id="erreurPrix"></div>
+    <input type="text" name="prix" id="prix" onblur="calcul()"><br>
+<br>
+    <label>Taxe ou Hors Taxe</label>
+    <div id="erreurType"></div>
+    <select id="taxe" onchange="calcul()">
+        <option value="">Choisissez un type de taxe</option>
+        <option value="ht">HT</option>
+        <option value="ttc">TTC</option>
+     </select><br>
+<br>
+     <label>Taux de TVA</label>
+     <div id="erreurTva"></div>
+     <select id="tva" onchange="calcul()">
+         <option value="">Choisissez un taux de tva</option>
+         <option value="10">10%</option>
+         <option value="20">20%</option>
+      </select>
+<br><br>
+   
+    <button type="button" id="button" onclick="calcultotal()" style="display:none" >Calculer le prix</button>
+    
+</form>
+<div id="result"></div>
+<script src="./TD3.js"></script>
+</body>
+</html>

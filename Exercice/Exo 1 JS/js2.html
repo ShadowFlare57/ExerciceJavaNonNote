@@ -1,0 +1,25 @@
+<h1>Exercice JS</h1>
+
+
+<div id="divTest">Ceci est un div de text</div>
+<label>Votre nom</label>
+<input type="text" id="nom" placeholder="saisir votre nom"  >
+
+<br>
+<br>
+
+<button type="button" onclick="recuperer()"  >Récupérer les données</button>
+
+
+<script type="text/javascript">
+
+function recuperer()
+{
+    var chaine = document.getElementById('nom').value;
+    var chaine2 = document.getElementById('divTest').innerText;
+    alert(chaine2)
+
+
+}
+
+</script>

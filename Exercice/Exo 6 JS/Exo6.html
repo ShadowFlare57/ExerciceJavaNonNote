@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exercices voir tableau</title>
+        <style>
+            body{
+                padding: 40px;
+                width: 1000px;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return envoyer()">
+            <label for="nom">Votre nom :</label><br>
+            <input id="nom"><br><br>
+            <label for="prenom">Votre prénom :</label><br>
+            <input id="prenom"><br><br>
+            <input type="submit"><br>
+        </form>
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </body>
+    <script>
+        let tab1 = ['Cédric', 'Bernard', 'Joseph', 'Aurélie', 'Chloé', 'Anthony', 'Denis'];
+        let tab2 = ['Durand', 'Dupond', 'Baune', 'Michel'];
+
+        const nom = document.getElementById('nom');
+        const prenom = document.getElementById("prenom");
+        const div1 = document.getElementById('div1');
+        const div2 = document.getElementById('div2');
+
+        function test(qui){
+            let flag = false;
+            for (let i of qui) {
+                if (nom.value != i) {
+                    flag =true;
+                }
+            }
+            if (flag){
+                qui.push(nom.value);
+                qui.push(prenom.value);
+            }
+        }
+        function affichTab(qui) {
+            let text ="";
+            for (let i of qui) {
+                text += i+"<br>";
+            }
+            return text
+        }
+        function envoyer(){
+            
+            if (nom.value != "" && prenom.value != ""){
+                test(tab1);
+                test(tab2);
+
+                div1.innerHTML = "Il y a "+tab1.length+" prénoms dans le tableau, voici les prénoms :<br><br>"+affichTab(tab1);
+                div2.innerHTML = "Il y a "+tab2.length+" noms dans le tableau, voici les noms :<br><br>"+affichTab(tab2);
+            }
+    
+            return false
+        }
+
+    </script>
+</html>

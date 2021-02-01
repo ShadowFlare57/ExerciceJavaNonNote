@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD 1</title>
+    <script src="./TDJS.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Inscription</h1>
+        <label for="nom">Nom</label>
+        <div id="noms"></div>
+        <input id="noms" type="text" placeholder="Votre nom">
+        <hr>
+        <br>
+        <label for="prenom">Prenom</label>
+        <div id="prenoms"></div>
+        <input id="prenomss" type="text" placeholder="Votre prénom">
+        <hr>
+        <br>
+        <label for="date">Date de naissance</label>
+        <div id="dates"></div>
+        <input id="dates" type="date" placeholder="Votre Date de naissance">
+        <hr>
+        <br>
+        <label for="lieu">Lieu de naissance</label>
+        <div id="lieu"></div>
+        <input id="lieu" type="text" placeholder="Lieu de naissance">
+        <hr>
+        <br>
+        <label for="signe">Signe astrologique</label>
+        <div id="signes"></div>
+        <select id="signes" name="signe">
+            <option>Bélier</option>
+            <option>Taureau</option>
+            <option>Gémeaux</option>
+            <option>Cancer</option>
+            <option>Lion</option>
+            <option>Vierge</option>
+            <option>Balance</option>
+            <option>Scorpion</option>
+            <option>Sagittaire</option>
+            <option>Capricorne</option>
+            <option>Verseau</option>
+            <option>Poisson</option>
+        </select>
+        <hr>
+        <br>
+        <label for="email">Email</label>
+        <div id="email"></div>
+        <input id="email" type="text" placeholder="Votre adresse email">
+        <hr>
+        <br>
+        <label for="mdp">Mot de passe</label>
+        <div id="mdp"></div>
+        <input id="mdp" type="text" placeholder="Votre mot de passe">
+        <hr>
+        <br>
+        <label for="mdpc">Confirmez le mot de passe</label>
+        <div id="mdpc"></div>
+        <input id="mdpc" type="text" placeholder="Confirmez mot de passe">
+        <hr>
+        <br>
+        <label for="presentation">Présentation en quelques mots</label>
+        <div id="presentation"></div>
+        <textarea id="presentation" cols="30" rows="5">Présentez vous !</textarea>
+        <hr>
+        <div id="error"></div>
+        <br>
+        <button onclick="envoyer()">Inscription</button>
+    </form>
+</body>
+</html>
