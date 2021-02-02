@@ -15,20 +15,19 @@
         qui seront classés par ordre alphabétique croissant.
         Il faudra également stocker dans une variable le montant total du stock et l'afficher.
         Afficher un bouton qui permettra à l'utilisateur de voir tous les produits du stock.</p><br>
-    <label for="nom">Nom du produit</label> <span id="ErreurNom" style="color: red;display:block;">Champ Obligatoire</span><br>
+        
+    <label for="nom">Nom du produit</label><br>
     <input type="text" name="produit" id="nom"><br>
     <br>
-    <label for="nbr">Quantité</label><span id="ErreurNbr" style="color: red;display:block;">Champ Obligatoire</span><br>
+    <label for="nbr">Quantité</label><br>
     <input type="text" name="quantité" id="nombre"><br>
     <br>
-    <label for="prix">Prix</label><span id="ErreurPrix" style="color: red;display:block;">Champ Obligatoire</span><br>
+    <label for="prix">Prix</label><br>
     <input type="text" name="prix" id="prix"><br>
     <br>
     <button type="button" onclick="result()">Envoyer</button><br>
-    <div id="total"></div>
-
-
-
+    <div id="nomproduit"></div><br>
+    <div id="totalstock"></div><br>
 
     <script src="./Exo7.js"></script>
 </body>
